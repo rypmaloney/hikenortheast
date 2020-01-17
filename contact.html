@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact - Hike the Northeast</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js">
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#myForm").validate();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header id="hikepageheader">
+
+         <a href="index.html"> <h1 id="hikepagetitle">Hike the Northeast</h1></a>
+        <h2 id="biline">Contact us</h2>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="easy.html">Easy</a></li>
+            <li><a href="moderate.html">Moderate</a></li>
+            <li><a href="difficult.html">Difficult</a></li>
+            <li><a href="furtherreading.html">Further Reading</a></li>
+            <li><a href="contact.html" id="youarehere">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <section id="description">
+            <h3>Share your own experience</h3>
+            <p>The purpose of HikeNorthEast is personal. I outline hikes that only I have taken personally and share tips tricks and thoughts about them. This is the exact opposite of comprehensive, but there will be no sterile listing of stats (though there will be some stats).</p>
+            <p><em><b>In the spirit of collaboration: I want you to contribute! A single man can only explore so many places. If you took hike that inspired you, visit the contact page, write a review, and I’ll incorporate it in the website.</b> </em> </p>
+        </section>
+        <article>
+            <form id="myForm" method="post" action="">
+                    <h3>Your Information</h3>
+                <p>
+                    <label for="name">Name</label> <em>(Required)</em>
+                    <br />
+                    <input id="name" name="name" size="25" class="required" /> </p>
+                <p>
+                    <label for="email">Email Address</label> <em>(Required)</em>
+                    <br />
+                    <input id="email" name="email" size="25" class="required email" /> </p>
+                <p>
+                    <label for="comments">What would you like to add to the site?</label> <em>(Required)</em>
+                    <br />
+                    <textarea id="comments" name="comments" cols="100" rows="15" class="required"></textarea></p>
+                <p>
+                    <input class="submit" type="submit" value="Submit Form" /> </p>
+            </form>
+        </article>
+    </main>
+
+
+
+    <footer>
+        <div id="footercontent">
+
+            <p>“Withstanding the cold develops vigor for the relaxing days of spring and summer. Besides, in this matter as in many others, it is evident that nature abhors a quitter.”</p>
+            <p>― Arthur C. Crandall</p>
+        </div>
+    </footer>
+
+</body></html>

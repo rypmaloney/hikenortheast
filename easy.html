@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Easy Hikes - Hike the Northeast</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is the definitive site on Ryan Maloney's personal preferences on easy hikes.">
+
+
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.bootstrap.css">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.tablesorter.widgets.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/colorbox.css">
+    <script id="js">
+        $(document).ready(function() {
+
+            $("#myTable").tablesorter({
+
+                theme: 'bootstrap',
+
+                widgets: ["zebra"],
+
+                sortList: [
+                    [0, 0]
+                ]
+
+            });
+
+        });
+
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('a.gallery').colorbox({
+                opacity: 0.5,
+                rel: 'group1',
+                scalePhotos: true,
+                maxWidth: '75%',
+                maxHeight: '75%',
+             
+
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <header id="hikepageheader">
+
+        <a href="index.html"> <h1 id="hikepagetitle">Hike the Northeast</h1></a>
+        <h2 id="biline">Easy Hikes</h2>
+    </header>
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="easy.html" id="youarehere">Easy</a></li>
+            <li><a href="moderate.html">Moderate</a></li>
+            <li><a href="difficult.html">Difficult</a></li>
+            <li><a href="furtherreading.html">Further Reading</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <section id="description">
+            <h3> What constitutes an easy hike?</h3>
+
+            <p>This is arbitrary, but my ideal easy hike is just a walk around the park. So thats the benchmark here. I’d say anywhere less than 2 hours (three maximum). Little to no elevation gain. I think a good litmus test for what I think of when I think about this category is this: when your walking around could you at any moment just pack up and pretty easily get back to the car? </p>
+        </section>
+        <article>
+            <h3> My top three easy hikes</h3>
+            <hr>
+            <h4>King Phillip Overlook</h4>
+            <p class="location">Medfield, MA</p>
+
+            <p>King Philip Overlook (named after the war of the same name) is a convenient 2.6 mile loop with mild elevation gain. This rocky trail begins on a railroad track and summits at an overlook to the Charles river. Views of a model plane airfield can be seen below. If you come during the right times of day in the summer, you can see hobbyists flying planes and helicopters in the New England sunset. This is a safe, easy trail that still allows for some elevation gain. And at 1-1.5 hrs round trip, its a relaxing way to spend an afternoon. </p>
+
+            <h4>Medfield State Hospital </h4>
+            <p class="location">Medfield, MA</p>
+            <p>Right on the other side of the Charles is the Medfield State Hospital. The abandoned mental asylum has been reinvigorated by the town as a dog walking park. You can spend plenty of time wandering around the prewar buildings and exploring the park. Be careful not to enter the buildings, though. Asbestos abounds. Fun fact: this is where the movie “Shutter Island” was filmed. </p>
+
+            <h4>Wompatuck State Park</h4>
+            <p class="location">Hingham, MA</p>
+            <p>Theres a hidden diamond in Hingham, Massachusetts. Wompatuck State Park is an abandoned naval base (sensing a theme?). That features miles of walking trails. Though in the center of a relatively well-populated suburban area, Wompatuck feature secluded loops and bike-paths. There are trails that provide views of ponds, and others that take you around left-behind military bunkers—an eerie sight. Note of caution, the trail layout is exceptionally spiderwebbed and confusing, so it is very easy to get lost. </p>
+        </article>
+        <article class="images">
+            <h3>Gallery</h3>
+        <ul>
+            <li><a class='gallery' href='images/womp.jpeg'><img src="images/small/womplittle.png" alt="image" /></a></li>
+            <li><a class='gallery' href='images/header.jpeg'><img src="images/small/headersmall.png" alt="image" /></a></li>
+            <li><a class='gallery' href='images/kpo.jpeg'><img src="images/small/kposmall.png" alt="image" /></a></li>
+            <li><a class='gallery' href='images/med.jpeg'><img src="images/small/medsmall.png" alt="image" /></a></li>
+            <li><a class='gallery' href='images/notch.jpeg'><img src="images/small/notchsmall.png" alt="image" /></a></li>
+            </ul>
+        
+        </article>
+        <article>
+            <h3>Full list of easy hikes</h3>
+            <hr>
+            <table id="myTable" class="tablesorter">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Hike Name</th>
+                        <th>Distance (miles)</th>
+                        <th>Duration (hours)</th>
+                        <th>Elevation Gain (feet)</th>
+                        <th>Features</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>King Philip Overlook, MA</td>
+                        <td>Rocky Narrows Overlook Loop</td>
+                        <td>2.6</td>
+                        <td>1.5</td>
+                        <td>200</td>
+                        <td>Views of the river and model plane airfield.</td>
+                    </tr>
+                    <tr>
+                        <td>Medfield State Hospital, MA</td>
+                        <td>Hospital Park/Hospital Hill</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>Architecture. Dog Friendly.</td>
+                    </tr>
+                    <tr>
+                        <td>Wompatuck State Park, MA</td>
+                        <td>Pond Loop</td>
+                        <td>1.5</td>
+                        <td>1.5</td>
+                        <td>50</td>
+                        <td>Views of the pond. Seclusion and privacy.</td>
+                    </tr>
+                    <tr>
+                        <td>Middlesex Fells Reservation, MA</td>
+                        <td>West Trail</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>400</td>
+                        <td>Convenience of location. Incredibly dog friendly.</td>
+                    </tr>
+                    <tr>
+                        <td>Noon Hill, MA</td>
+                        <td>Noon Hill Overlook Trail</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>300</td>
+                        <td>Easy views of Boston.</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Hills Reservation, MA</td>
+                        <td>Walcott Hill</td>
+                        <td>2</td>
+                        <td>1.5</td>
+                        <td>400</td>
+                        <td>Scenery</td>
+                    </tr>
+                    <tr>
+                        <td>Franconia Notch, NH </td>
+                        <td>Gorge Trail</td>
+                        <td>2</td>
+                        <td>1.5</td>
+                        <td>200</td>
+                        <td>Views. Very easy. Handrails. Family friendly.</td>
+                    </tr>
+                    <tr>
+                        <td>Haystack Mountain, VT</td>
+                        <td>Peak Loop</td>
+                        <td>2</td>
+                        <td>1.5</td>
+                        <td>200</td>
+                        <td>Views, convenience and ease.</td>
+                    </tr>
+                    <tr>
+                        <td>Worlds End, MA</td>
+                        <td>Park Trails</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>150</td>
+                        <td>Views of Boston over the water. Proximity to the ocean and popular South Shore beaches.</td>
+                    </tr>
+                    <tr>
+                        <td>Lincoln Woods, NH</td>
+                        <td>Lincoln Woods Trail</td>
+                        <td>2.9</td>
+                        <td>2.5</td>
+                        <td>280</td>
+                        <td>Easy introduction to the White Mountains.</td>
+                    </tr>
+                    <tr>
+                        <td>Snake Mountain, VT</td>
+                        <td>Old Carriage Road</td>
+                        <td>1.5</td>
+                        <td>3</td>
+                        <td>900</td>
+                        <td>Good views, but a steep climb.</td>
+                    </tr>
+                    <tr>
+                        <td>Sugarloaf Mountain, MA</td>
+                        <td>South Sugarloaf</td>
+                        <td>1.4</td>
+                        <td>2</td>
+                        <td>450</td>
+                        <td>Cool lookout tower at the summit with impressive views.</td>
+                    </tr>
+                    <tr>
+                        <td>Narragansett, RI</td>
+                        <td>Blackpoint Trail</td>
+                        <td>1</td>
+                        <td>.75</td>
+                        <td>0</td>
+                        <td>A nice easy veiw of the water in Rhode Island.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+    <footer>
+        <div id="footercontent">
+
+            <p>“Withstanding the cold develops vigor for the relaxing days of spring and summer. Besides, in this matter as in many others, it is evident that nature abhors a quitter.”</p>
+            <p>― Arthur C. Crandall</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
