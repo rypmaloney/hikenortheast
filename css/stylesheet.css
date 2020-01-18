@@ -139,7 +139,7 @@ article {
 
 }
 
-.quoteblock {
+#quoteblock {
     padding: 5px;
     min-width: 7em;
     max-width: 50em;
@@ -224,10 +224,10 @@ nav ul li a:active {
 
 
 
-footer {
-    padding-bottom: 0 ;
-    background-color: #d69542;
 
+footer {
+    padding-bottom: ;
+    background-color: #d69542;
 }
 
 
@@ -237,8 +237,6 @@ footer {
     font-family: 'Gentium Basic', serif;
     margin: 0 7% 0 7%
 }
-
-
 
 
 input.error {
@@ -286,17 +284,4 @@ label.error {
         font-size: 60px
     }
 
-    =
-}
-
-@media (max-width:1100px) {
-    textarea { 
-   width: 30em;
-    }
-}
-
-@media (max-width:750px) {
-    textarea { 
-   width: 20em;
-    }
 }
